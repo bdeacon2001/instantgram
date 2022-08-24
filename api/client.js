@@ -6,6 +6,6 @@ export default sanityClient({
     projectId: "7gqayfh5",
   dataset: "production",
   useCdn: false,
-  apiVersion: "2022-08-22",
+  apiVersion: "2022-02-22",
   token: process.env.SANITY_API_TOKEN,
 });
