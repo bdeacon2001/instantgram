@@ -1,7 +1,6 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,11 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sanity/cli": "^2.30.6",
+    "@sanity/client": "^3.3.3",
     "body-parser": "^1.20.0",
     "dotenv": "^16.0.1",
     "fs": "^0.0.1-security",
-    "multer": "^1.4.5-lts.1",
-    "nanoid": "^4.0.0"
-  }
+    "multer": "^1.4.4",
+    "nanoid": "^3.3.4"
+  },
+  "description": ""
 }

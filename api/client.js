@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export default sanityClient({
-    projectId: "7gqayfh5",
+  projectId: "2l6kg3bi",
   dataset: "production",
   useCdn: false,
   apiVersion: "2022-02-22",
