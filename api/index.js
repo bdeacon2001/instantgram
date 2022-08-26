@@ -13,6 +13,7 @@ const {
   updateProfile,
   addFollower,
   removeFollower,
+  showPost
 } = functions;
 
 const app = express();
@@ -75,6 +76,17 @@ app.get("/getPosts", (req, res) => {
 app.post("/updateProfile", upload.single("file"), (req, res) => {
   const body = req.body;
   updateProfile(
+    body.user,
+    body.first_name,
+    body.last_name,
+    body.bio,
+    req.file
+  ).then((data) => res.json(data));
+});
+
+app.post("/showPost", upload.single("file"), (req, res) => {
+  const body = req.body;
+  showPost(
     body.user,
     body.first_name,
     body.last_name,
